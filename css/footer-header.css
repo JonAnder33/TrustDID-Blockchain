@@ -1,0 +1,121 @@
+/*Al body le colocamon un borde negro y el margin auto para que ocupe toda la pantalla*/
+body{
+    margin: auto;
+    border: 2px solid black
+  }
+  
+  /*Al header se le pone el padding para que este arriba del todo del body.
+    Luego se le coloca el color de fondo y se hace que el texto se centre */
+  header{
+    text-align: center;
+    background-color: rgb(52, 216, 52);
+    padding: 1%;
+  }
+  
+  /*Al nav se le coloca el color verdoso, y se le coloca paddings para que sea bonito esteticamente*/
+  nav{
+    background-color: rgb(166, 255, 0);
+    padding-left: 2%;
+    padding-bottom: 3%;
+    padding-right: 2%;
+    padding-top: 1%;
+  }
+  
+  /*A la lista de elementos del nav se les coloca un width del 33% y un float left para que se coloquen de manera horizontar
+    (estetica). Luego hago que el texto este centrado*/
+  div.nav_list{
+    text-align: center;
+    width: 33%;
+    float:left;    
+  }
+  
+  /*A los enlaces en estado base se colocaran en azul claro*/
+  a{
+  color: rgb(53, 149, 228);
+  }
+  
+  /*A los enlaces cuando se pase el raton por encima se colocaran en azul oscuro*/
+  a:hover{
+  color: rgb(0, 2, 139);
+  }
+  
+  /*Se le coloca el claer both al footer para que no se apile con el aside o con el article (En funcion de cual sea el mas 
+    corto, con ese se apilara, por eso pongo el "both" ya que de esta manera me aseguro que de igual cual de los dos sea el mas corto)
+    Ademas colocamos un madding 1% y de color negro*/
+  footer{
+    clear: both;
+    padding: 1%;
+    background-color: black;
+  }
+  
+  /*Coloco el texto blanco del footer centrado y blanco*/
+  div.footer_texto{
+    color: white;
+    text-align: center;
+  }
+  
+  /*Esto, aunque su nombre no sea entendible, lo que hace es que se le asigna a una imagen, y se le coloca un width de 48
+    un padding de 1% (para que asi sea un 50% lo que ocupa) se manda a la derecha con un float y luego mandamos esa imagen
+    a la izquierda con text-align, y asi hara colision con la otra imagen que es lo mismo pero en direcciones opuestas*/
+  div.footer_list_izquierda{
+    padding: 1%;
+    width: 48%;
+    float: right;
+    text-align: left;
+  }
+  
+  /*Esto, aunque su nombre no sea entendible, lo que hace es que se le asigna a una imagen, y se le coloca un width de 48
+    un padding de 1% (para que asi sea un 50% lo que ocupa) se manda a la izquierda con un float y luego mandamos esa imagen
+    a la derecha con text-align, y asi hara colision con la otra imagen que es lo mismo pero en direcciones opuestas*/
+  div.footer_list_derecha{
+    padding: 1%;
+    width: 48%;
+    float: left;
+    text-align: right;
+  }
+  
+  /* Se coloca el titulo del footer de color blanco*/
+  div#footer_titulo{
+    color: white; 
+  }
+  
+  /*Se establece el ancho y el alto de la imagen*/
+  img{
+    height: 30px;
+    width: 30px;
+  }
+  
+  /*A los h1 y h2 se colocaran con texto centrado y con el tipo de letra determinado*/
+  h2, h1{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif ;
+  }
+  
+  
+  /*En funcion de la anchura de la pantalla el nav cambiara, la intencion con esto es que si se hace en una pantalla muy pequeña 
+    contenido que tiene el nav pase de estar horizontalmente a estar verticalmente para una mejor comodidas*/
+  @media only screen and (max-width: 800px) {
+  
+    /*Hago que los elementos de la lista esten colocados a la derecha del todo verticalmente*/
+    div.nav_list{
+      text-align: left;
+      width: 100%;
+      float:left;    
+    }
+    /*Modifico los margenes y los padding para que quede mejor esteticamente*/
+    header{  
+      margin-top: 0%;
+      padding-left: 5%;
+      padding-bottom: 5%;
+      padding-right: 5%;
+      padding-top: 1%;
+    }
+    /*Modifico los padding para que quede mejor esteticamente*/
+    nav{
+      padding-left: 5%;
+      padding-bottom: 60px;
+      padding-right: 5%;
+      padding-top: 0%;
+    
+    }
+  }
