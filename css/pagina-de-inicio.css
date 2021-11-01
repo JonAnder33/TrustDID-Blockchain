@@ -1,0 +1,13 @@
+header{
+    text-align: center;
+}
+
+div.container{
+    border: 1px solid black;
+    text-align: center;
+    font-size: larger;
+    padding: 16px;
+    margin: 44px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
